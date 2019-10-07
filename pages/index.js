@@ -21,6 +21,8 @@ const Home = () => (
         Learn more
       </a>
     </div>
+
+    <h1>New changes for testing ripo.</h1>
   </Layout>
 );
 
