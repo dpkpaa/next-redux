@@ -1,11 +1,11 @@
 import React from "react";
-
+import Link from "next/link";
 export default function Header() {
   return (
     <span className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">
-        Navbar
-      </a>
+      <Link href="/">
+        <a className="navbar-brand">Next Redux App</a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -19,19 +19,21 @@ export default function Header() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
-            Home <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Features
-          </a>
+          <Link href="/">
+            <a className="nav-item nav-link active">
+              Home <span className="sr-only">(current)</span>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="nav-item nav-link">About Us</a>
+          </Link>
           <a className="nav-item nav-link" href="#">
             Pricing
           </a>
           <a
             className="nav-item nav-link disabled"
             href="#"
-            tabindex="-1"
+            tabIndex="-1"
             aria-disabled="true"
           >
             Disabled
