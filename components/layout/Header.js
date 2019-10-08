@@ -27,17 +27,9 @@ export default function Header() {
           <Link href="/about">
             <a className="nav-item nav-link">About Us</a>
           </Link>
-          <a className="nav-item nav-link" href="#">
-            Pricing
-          </a>
-          <a
-            className="nav-item nav-link disabled"
-            href="#"
-            tabIndex="-1"
-            aria-disabled="true"
-          >
-            Disabled
-          </a>
+          <Link href="/counter">
+            <a className="nav-item nav-link">Counter</a>
+          </Link>
         </div>
       </div>
     </span>

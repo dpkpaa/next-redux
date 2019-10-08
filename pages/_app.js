@@ -1,6 +1,8 @@
 import React from "react";
 import App from "next/app";
-
+import {Provider} from 'react-redux'
+import withRedux from "next-redux-wrapper";
+import makeStore from "../store";
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to
@@ -15,9 +17,13 @@ class MyApp extends App {
   // }
 
   render() {
-    const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+    const { Component, pageProps, store } = this.props;
+    return (
+        <Provider store={store}>
+            <Component {...pageProps} />
+        </Provider>
+    );
   }
 }
 
-export default MyApp;
+export default withRedux(makeStore)(MyApp);

@@ -1,0 +1,7 @@
+//Counters
+export const COUNTER_INCREMENT = 'COUNTER_INCREMENT'
+export const COUNTER_DECREMENT = 'COUNTER_DECREMENT'
+
+
+//Users
+export const FETCH_USER = 'FETCH_USER'
