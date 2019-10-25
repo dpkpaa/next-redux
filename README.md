@@ -1,17 +1,10 @@
 # next-redux
 
-## Example
-
 ### install 
 
-``` git
+```bash
   git clone https://github.com/dpkpaa/next-redux.git
-```
-``` node
   npm install
-```
-
-``` node
   npm run dev 
 ```
-
+[Run this in localhost](http://localhost:3000)
